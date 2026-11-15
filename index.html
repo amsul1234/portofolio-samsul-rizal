@@ -1,0 +1,1666 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsul Rizal, S.Kom | Portofolio & CV Digital Pencari Kerja</title>
+    <meta name="description" content="Portofolio Resmi Samsul Rizal - Lulusan S1 Informatika dengan keahlian Full-Stack Web Development, Data Analysis, Quality Control, Database MySQL, dan Supervisi Operasional.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Scrollbar Biru & Hitam */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #2563eb;
+        }
+
+        /* Latar Belakang Mesh Halus Biru & Putih (Default Seperti Gambar) */
+        .hero-bg-mesh {
+            background-color: #f8fafc;
+            background-image: 
+                radial-gradient(at 12% 15%, rgba(37, 99, 235, 0.10) 0px, transparent 50%),
+                radial-gradient(at 88% 18%, rgba(14, 165, 233, 0.12) 0px, transparent 50%),
+                radial-gradient(at 50% 90%, rgba(15, 23, 42, 0.04) 0px, transparent 50%);
+        }
+    </style>
+</head>
+<body class="hero-bg-mesh text-slate-900 font-sans antialiased selection:bg-blue-600 selection:text-white min-h-screen">
+
+    <!-- =====================================================================
+         PANDUAN LOKASI MEMASUKKAN FILE FOTO DI KODE INI (UNTUK SAMSUL RIZAL):
+         
+         Cara Cepat Mencari Lokasi Foto:
+         Tekan Ctrl + F di keyboard Anda, lalu ketik: [TANDA GANTI FOTO
+         
+         Daftar 13 Lokasi File Foto yang Dipanggil di File index.html Ini:
+         1.  [TANDA GANTI FOTO 1]  Foto Profil Utama   -> src="img/profil-samsul.jpg"
+         2.  [TANDA GANTI FOTO 2]  Foto Proyek 1       -> src="img/projek-1.jpg"
+         3.  [TANDA GANTI FOTO 3]  Foto Proyek 2       -> src="img/projek-2.jpg"
+         4.  [TANDA GANTI FOTO 4]  Foto Proyek 3       -> src="img/projek-3.jpg"
+         5.  [TANDA GANTI FOTO 5]  Foto Proyek 4       -> src="img/projek-4.jpg"
+         6.  [TANDA GANTI FOTO 6]  Foto Proyek 5       -> src="img/projek-5.jpg"
+         7.  [TANDA GANTI FOTO 7]  Foto Proyek 6       -> src="img/projek-6.jpg"
+         8.  [TANDA GANTI FOTO 8]  Foto Proyek 7       -> src="img/projek-7.jpg"
+         9.  [TANDA GANTI FOTO 9]  Foto Proyek 8       -> src="img/projek-8.jpg"
+         10. [TANDA GANTI FOTO 10] Foto Sertifikat 1   -> src="img/sertifikat-1.jpg"
+         11. [TANDA GANTI FOTO 11] Foto Sertifikat 2   -> src="img/sertifikat-2.jpg"
+         12. [TANDA GANTI FOTO 12] Foto Sertifikat 3   -> src="img/sertifikat-3.jpg"
+         13. [TANDA GANTI FOTO 13] Foto Sertifikat 4   -> src="img/sertifikat-4.jpg"
+
+         Catatan:
+         Buatlah folder bernama "img" satu lokasi dengan file index.html ini,
+         lalu masukkan foto-foto Anda ke dalam folder "img" tersebut.
+    ====================================================================== -->
+
+    <!-- Toast Notification Container -->
+    <div id="toastContainer" class="fixed bottom-5 right-5 z-[100] flex flex-col gap-2 max-w-sm w-full pointer-events-none px-4 sm:px-0"></div>
+
+    <!-- =====================================================================
+         NAVIGASI UTAMA (BERSIH, RINGKAS & PROFESIONAL)
+    ====================================================================== -->
+    <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
+            
+            <!-- Brand Identity -->
+            <a href="#profil" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-slate-950 text-white flex items-center justify-center font-display font-extrabold text-base sm:text-lg shadow-md group-hover:bg-blue-600 transition-colors">
+                    SR
+                </div>
+                <div>
+                    <span class="font-display font-extrabold text-base sm:text-lg tracking-tight text-slate-950 block leading-none">
+                        Samsul Rizal<span class="text-blue-600">.</span>
+                    </span>
+                    <span class="text-[11px] text-slate-600 font-semibold block mt-1">
+                        S1 Informatika • Portfolio Resmi
+                    </span>
+                </div>
+            </a>
+
+            <!-- Menu Navigasi Desktop -->
+            <nav class="hidden lg:flex items-center gap-1 xl:gap-2 text-sm font-semibold text-slate-700">
+                <a href="#profil" class="px-3.5 py-2 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-colors">Profil</a>
+                <a href="#keahlian" class="px-3.5 py-2 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-colors">Keahlian</a>
+                <a href="#pengalaman" class="px-3.5 py-2 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-colors">Pengalaman & Pendidikan</a>
+                <a href="#proyek" class="px-3.5 py-2 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-colors flex items-center gap-1.5">
+                    Proyek Sistem
+                    <span class="px-2 py-0.5 text-[11px] rounded-full bg-blue-600 text-white font-bold">8</span>
+                </a>
+                <a href="#sertifikat" class="px-3.5 py-2 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-colors">Sertifikat</a>
+                <a href="#kontak" class="px-3.5 py-2 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-colors">Kontak</a>
+            </nav>
+
+            <!-- Tombol Aksi Kanan (Tanpa Cetak CV) -->
+            <div class="flex items-center gap-2.5">
+                <a href="#kontak" class="inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-slate-950 text-white font-bold text-xs sm:text-sm shadow-md shadow-blue-600/20 transition-all">
+                    <i class="fa-solid fa-paper-plane"></i> Hubungi Saya
+                </a>
+
+                <!-- Tombol Menu HP -->
+                <button onclick="toggleMobileMenu()" aria-label="Buka Menu" class="lg:hidden w-10 h-10 rounded-xl border border-slate-300 bg-white flex items-center justify-center text-slate-900">
+                    <i id="mobileMenuIcon" class="fa-solid fa-bars text-base"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Dropdown Menu HP (Tanpa Cetak CV) -->
+        <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-5 space-y-1.5 shadow-lg">
+            <a href="#profil" onclick="toggleMobileMenu()" class="block px-3.5 py-2.5 rounded-xl font-semibold text-slate-800 hover:bg-blue-50 hover:text-blue-600">Profil Singkat</a>
+            <a href="#keahlian" onclick="toggleMobileMenu()" class="block px-3.5 py-2.5 rounded-xl font-semibold text-slate-800 hover:bg-blue-50 hover:text-blue-600">Keahlian Utama</a>
+            <a href="#pengalaman" onclick="toggleMobileMenu()" class="block px-3.5 py-2.5 rounded-xl font-semibold text-slate-800 hover:bg-blue-50 hover:text-blue-600">Pengalaman Kerja & Pendidikan</a>
+            <a href="#proyek" onclick="toggleMobileMenu()" class="block px-3.5 py-2.5 rounded-xl font-semibold text-slate-800 hover:bg-blue-50 hover:text-blue-600">8 Proyek Sistem Informasi</a>
+            <a href="#sertifikat" onclick="toggleMobileMenu()" class="block px-3.5 py-2.5 rounded-xl font-semibold text-slate-800 hover:bg-blue-50 hover:text-blue-600">Sertifikat Kompetensi</a>
+            <a href="#kontak" onclick="toggleMobileMenu()" class="block px-3.5 py-2.5 rounded-xl font-semibold text-slate-800 hover:bg-blue-50 hover:text-blue-600">Informasi Kontak</a>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+
+        <!-- =================================================================
+             1. HERO SECTION & PROFIL PENCARI KERJA
+        ================================================================== -->
+        <section id="profil" class="pt-8 sm:pt-14 lg:pt-16 pb-16">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                
+                <!-- Kolom Kiri: Deskripsi Diri & Biodata -->
+                <div class="lg:col-span-7 space-y-6 order-2 lg:order-1">
+                    
+                    <!-- Badge Status Pencari Kerja -->
+                    <div class="inline-flex flex-wrap items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs sm:text-sm font-bold">
+                        <i class="fa-solid fa-circle-check text-blue-600"></i>
+                        <span>Sertifikasi BNSP Junior Web Developer • Lulusan S1 Informatika</span>
+                    </div>
+
+                    <div class="space-y-3">
+                        <p class="text-xs sm:text-sm uppercase tracking-widest text-blue-700 font-extrabold">
+                            PORTOFOLIO PROFESIONAL & PROFIL KANDIDAT
+                        </p>
+                        <h1 class="font-display font-extrabold text-3xl sm:text-5xl lg:text-6xl tracking-tight text-slate-950 leading-[1.12]">
+                            Halo, Saya <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-600 to-sky-500">Samsul Rizal</span>
+                        </h1>
+                        <p class="text-base sm:text-xl font-bold text-slate-800 flex flex-wrap items-center gap-x-2.5 gap-y-1 pt-1">
+                            <span>Full-Stack Web Developer</span>
+                            <span class="text-blue-600">•</span>
+                            <span>Data Analyst</span>
+                            <span class="text-blue-600">•</span>
+                            <span>Quality Control</span>
+                            <span class="text-blue-600">•</span>
+                            <span>Operations Supervisor</span>
+                        </p>
+                    </div>
+
+                    <p class="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
+                        Lulusan <strong class="text-slate-950 font-bold">S1 Informatika (2022–2026)</strong> berusia <strong class="text-slate-950 font-bold">22 tahun</strong> yang memiliki perpaduan kompetensi teknis pengembangan sistem informasi <em>end-to-end</em> (perancangan database MySQL, fungsi backend, hingga antarmuka web responsif) serta pengalaman kerja nyata sebagai <strong class="text-slate-950 font-bold">Supervisor Operasional</strong>, <strong class="text-slate-950 font-bold">Pengendali Stok & Quality Control</strong>, dan <strong class="text-slate-950 font-bold">Pengelola Laporan Data Global & Gaji Karyawan</strong>. Siap berkontribusi secara profesional, teliti, dan berorientasi target di perusahaan Anda.
+                    </p>
+
+                    <!-- Biodata Singkat (2 Kartu Putih Bersih) -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-1">
+                        <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex items-start gap-3.5">
+                            <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <div>
+                                <div class="text-[11px] uppercase tracking-wider text-slate-500 font-bold">Nama & Usia</div>
+                                <div class="text-sm sm:text-base font-extrabold text-slate-950">Samsul Rizal • 22 Tahun</div>
+                                <div class="text-xs text-slate-600 font-medium mt-0.5">S1 Informatika (2022 – 2026)</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex items-start gap-3.5">
+                            <div class="w-10 h-10 rounded-xl bg-slate-950 text-white flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <div class="text-[11px] uppercase tracking-wider text-slate-500 font-bold">Alamat Domisili</div>
+                                <div class="text-xs sm:text-sm font-extrabold text-slate-950 leading-snug">
+                                    Kp. Guradog Timur, Desa Citorek Timur
+                                </div>
+                                <div class="text-xs text-slate-600 font-medium mt-0.5">Kec. Cibeber, Kab. Lebak, Banten</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tombol CTA Utama -->
+                    <div class="flex flex-wrap items-center gap-3 pt-2">
+                        <a href="#proyek" class="px-6 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm shadow-lg shadow-blue-600/25 flex items-center gap-2 transition-all hover:-translate-y-0.5">
+                            <i class="fa-solid fa-laptop-code"></i> Lihat 8 Proyek Sistem
+                        </a>
+                        <a id="heroWaLink" href="https://wa.me/62113234195" target="_blank" rel="noopener noreferrer" class="px-5 py-3.5 rounded-xl bg-slate-950 hover:bg-slate-800 text-white font-bold text-sm flex items-center gap-2 shadow-md transition-all">
+                            <i class="fa-brands fa-whatsapp text-base text-sky-400"></i> Hubungi via WhatsApp
+                        </a>
+                        <button onclick="copyEmailAddress()" class="px-4 py-3.5 rounded-xl bg-white border border-slate-300 hover:border-blue-600 text-slate-900 font-bold text-sm flex items-center gap-2 shadow-sm transition-all">
+                            <i class="fa-regular fa-copy text-blue-600"></i> Salin Email
+                        </button>
+                    </div>
+
+                    <!-- Tautan Sosial Media Cepat -->
+                    <div class="pt-2 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs sm:text-sm text-slate-700">
+                        <span class="font-bold text-slate-950">Kanal Resmi:</span>
+                        <a id="heroLinkedinLink" href="https://linkedin.com/in/samsul-rizal" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 flex items-center gap-1.5 font-semibold">
+                            <i class="fa-brands fa-linkedin text-base text-blue-600"></i> LinkedIn
+                        </a>
+                        <a id="heroGithubLink" href="https://github.com/samsulrizal" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 flex items-center gap-1.5 font-semibold">
+                            <i class="fa-brands fa-github text-base text-slate-950"></i> GitHub
+                        </a>
+                        <a id="heroMailLink" href="mailto:samsul.rizal@email.com" class="hover:text-blue-600 flex items-center gap-1.5 font-semibold">
+                            <i class="fa-solid fa-envelope text-base text-blue-600"></i> <span class="contact-email-text">samsul.rizal@email.com</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Kolom Kanan: Tampilan Foto Profil Profesional (Tanpa Bungkus Form/Window) -->
+                <div class="lg:col-span-5 order-1 lg:order-2 flex justify-center">
+                    <div class="relative w-full max-w-xs sm:max-w-sm lg:max-w-md">
+                        
+                        <!-- Ornamen Latar Belakang Biru & Hitam Elegan di Belakang Foto -->
+                        <div class="absolute -inset-3 bg-gradient-to-tr from-blue-600/20 via-sky-400/15 to-transparent rounded-[2.5rem] blur-xl"></div>
+                        <div class="absolute inset-0 translate-x-3 translate-y-3 sm:translate-x-4 sm:translate-y-4 rounded-[2rem] bg-slate-950 shadow-xl"></div>
+                        <div class="absolute inset-0 -translate-x-2 -translate-y-2 rounded-[2rem] border-2 border-blue-600/30 pointer-events-none"></div>
+
+                        <!-- Bingkai Utama Foto Profil -->
+                        <div class="relative rounded-[2rem] overflow-hidden bg-slate-900 border-4 border-white shadow-2xl aspect-[4/4.8]">
+                            
+                            <!-- Badge Mengambang Kiri Atas (Status Kandidat) -->
+                            <div class="absolute top-4 left-4 z-10 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/95 backdrop-blur-md text-slate-950 text-xs font-extrabold shadow-lg border border-slate-200">
+                                <span class="w-2.5 h-2.5 rounded-full bg-blue-600 animate-ping"></span>
+                                <span class="w-2.5 h-2.5 rounded-full bg-blue-600 -ml-4"></span>
+                                <span>Siap Bekerja</span>
+                            </div>
+
+                            <!-- =================================================================
+                                 [TANDA GANTI FOTO 1 - FOTO PROFIL UTAMA SAMSUL RIZAL]
+                                 Masukkan nama file foto profil Anda pada bagian src="..." di bawah ini.
+                                 Contoh: src="img/profil-samsul.jpg" atau src="foto-samsul.jpg"
+                            ================================================================== -->
+                            <img 
+                                id="photo-profile"
+                                src="img/profile.jpg" 
+                                onerror="this.onerror=null; this.src='https://placehold.co/700x840/090d16/38bdf8?text=SAMSUL+RIZAL%0AFull-Stack+%26+Data+Analyst';"
+                                alt="Foto Profil Samsul Rizal" 
+                                class="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
+                            >
+
+                            <!-- Gradasi Halus di Bagian Bawah Foto untuk Teks Identitas -->
+                            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-transparent pt-14 pb-5 px-5 text-white">
+                                <p class="font-display font-extrabold text-lg sm:text-xl leading-tight text-white">
+                                    Samsul Rizal, S.Kom
+                                </p>
+                                <p class="text-xs text-sky-300 font-semibold mt-0.5">
+                                    Full-Stack Web Developer • Data & QC Specialist
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Bar Ringkasan Pencapaian Mengambang di Bawah Foto Profil -->
+                        <div class="relative z-10 -mt-5 mx-3 sm:mx-5 bg-white rounded-2xl border border-slate-200 shadow-xl p-3 sm:p-3.5 grid grid-cols-3 gap-2 text-center">
+                            <div class="border-r border-slate-100 pr-1">
+                                <div class="font-display font-extrabold text-lg sm:text-xl text-blue-600">8+</div>
+                                <div class="text-[11px] text-slate-700 font-bold">Proyek Sistem</div>
+                            </div>
+                            <div class="border-r border-slate-100 pr-1">
+                                <div class="font-display font-extrabold text-lg sm:text-xl text-slate-950">3+ Thn</div>
+                                <div class="text-[11px] text-slate-700 font-bold">Pengalaman</div>
+                            </div>
+                            <div>
+                                <div class="font-display font-extrabold text-lg sm:text-xl text-blue-600">4</div>
+                                <div class="text-[11px] text-slate-700 font-bold">Sertifikasi</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =================================================================
+             2. KOMPETENSI & KEAHLIAN UTAMA
+        ================================================================== -->
+        <section id="keahlian" class="py-14 border-t border-slate-200">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="inline-block px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-xs font-extrabold uppercase tracking-widest text-blue-700">
+                    KOMPETENSI UTAMA KANDIDAT
+                </span>
+                <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-slate-950 mt-3">
+                    Keahlian Teknis IT, Analisis Data & Operasional
+                </h2>
+                <p class="text-sm sm:text-base text-slate-600 mt-2.5 font-medium">
+                    Perpaduan kemampuan rekayasa perangkat lunak, ketelitian pengolahan data laporan manajemen, pengawasan mutu gudang, serta kepemimpinan tim.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                <!-- Keahlian 1 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:border-blue-600 hover:shadow-md transition-all">
+                    <div class="w-12 h-12 rounded-2xl bg-blue-600 text-white flex items-center justify-center text-xl mb-4 shadow-sm">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="font-display font-extrabold text-lg text-slate-950 mb-2">
+                        Full-Stack Web Development
+                    </h3>
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+                        Pembuatan, pembaruan (update), dan pemeliharaan sistem perusahaan secara menyeluruh mulai dari perancangan database relasional hingga fungsi backend dan antarmuka pengguna.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 pt-3 border-t border-slate-100">
+                        <span class="px-2.5 py-1 text-[11px] rounded-md bg-slate-100 text-slate-800 font-semibold">Web Backend</span>
+                        <span class="px-2.5 py-1 text-[11px] rounded-md bg-slate-100 text-slate-800 font-semibold">MySQL</span>
+                        <span class="px-2.5 py-1 text-[11px] rounded-md bg-blue-50 text-blue-700 font-bold">BNSP Junior Web</span>
+                    </div>
+                </div>
+
+                <!-- Keahlian 2 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:border-blue-600 hover:shadow-md transition-all">
+                    <div class="w-12 h-12 rounded-2xl bg-slate-950 text-white flex items-center justify-center text-xl mb-4 shadow-sm">
+                        <i class="fa-solid fa-chart-column"></i>
+                    </div>
+                    <h3 class="font-display font-extrabold text-lg text-slate-950 mb-2">
+                        Data Analysis & Data Entry
+                    </h3>
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+                        Berpengalaman menginput, memvalidasi, dan menganalisis data laporan global harian, mingguan, serta bulanan secara akurat untuk mendukung keputusan manajemen.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 pt-3 border-t border-slate-100">
+                        <span class="px-2.5 py-1 text-[11px] rounded-md bg-slate-100 text-slate-800 font-semibold">Laporan Global</span>
+                        <span class="px-2.5 py-1 text-[11px] rounded-md bg-slate-100 text-slate-800 font-semibold">Data Entry</span>
+                        <span class="px-2.5 py-1 text-[11px] rounded-md bg-blue-50 text-blue-700 font-bold">SPK / DSS</span>
+                    </div>
+                </div>
+
+                <!-- Keahlian 3 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:border-blue-600 hover:shadow-md transition-all">
+                    <div class="w-12 h-12 rounded-2xl bg-blue-600 text-white flex items-center justify-center text-xl mb-4 shadow-sm">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                    </div>
+                    <h3 class="font-display font-extrabold text-lg text-slate-950 mb-2">
+                        Quality Control & Stok Gudang
+                    </h3>
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+                        Pengendalian mutu hasil produksi, pencatatan keluar-masuk stok gudang (inventory), serta pemeriksaan kesesuaian stok fisik dengan sistem secara disiplin.
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 pt-3 border-t border-slate-100">
+                        <span class="px-2.5 py-1 text-[11px] rounded-md bg-slate-100 text-slate-800 font-semibold">Quality Control</span>
+                        <span class="px-2.5 py-1 text-[11px] rounded-md bg-slate-100 text-slate-800 font-semibold">Stok Gudang</span>
+                        <span class="px-2.5 py-1 text-[11px] rounded-md bg-blue-50 text-blue-700 font-bold">Audit Fisik</span>
+                    </div>
+                </div>
+
+                <!-- Keahlian 4 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:border-blue-600 hover:shadow-md transition-all">
+                    <div class="w-12 h-12 rounded-2xl bg-slate-950 text-white flex items-center justify-center text-xl mb-4 shadow-sm">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <h3 class="font-display font-extrabold text-lg text-slate-950 mb-2">
+                        Supervisi Tim & Pengurusan Gaji
+                    </h3>
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+                        Teruji memimpin tim operasional, menyusun strategi kerja 1 bulan ke depan, memantau kinerja harian karyawan, serta mengelola administrasi gaji (payroll).
+                    </p>
+                    <div class="flex flex-wrap gap-1.5 pt-3 border-t border-slate-100">
+                        <span class="px-2.5 py-1 text-[11px] rounded-md bg-slate-100 text-slate-800 font-semibold">Leadership</span>
+                        <span class="px-2.5 py-1 text-[11px] rounded-md bg-slate-100 text-slate-800 font-semibold">Payroll Gaji</span>
+                        <span class="px-2.5 py-1 text-[11px] rounded-md bg-blue-50 text-blue-700 font-bold">Strategi Tim</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================================================================
+             3. PENGALAMAN KERJA & INFORMASI PENDIDIKAN
+        ================================================================== -->
+        <section id="pengalaman" class="py-14 border-t border-slate-200">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                
+                <!-- Kolom Kiri: Pengalaman Kerja (7 Kolom) -->
+                <div class="lg:col-span-7">
+                    <div class="flex items-center gap-3.5 mb-8">
+                        <div class="w-11 h-11 rounded-2xl bg-blue-600 text-white flex items-center justify-center text-lg shadow-sm">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-extrabold uppercase tracking-widest text-blue-600">RIWAYAT PROFESIONAL</span>
+                            <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-slate-950">
+                                Pengalaman Kerja
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="relative pl-6 sm:pl-8 border-l-2 border-blue-600 space-y-6">
+                        
+                        <!-- Pengalaman 1: IT Web Development -->
+                        <div class="relative">
+                            <span class="absolute -left-[33px] sm:-left-[41px] top-1.5 w-4 h-4 rounded-full bg-blue-600 ring-4 ring-blue-100"></span>
+                            <div class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200 shadow-sm hover:border-blue-600 transition-all">
+                                <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                                    <span class="px-3 py-1 rounded-full text-xs font-bold bg-blue-600 text-white">
+                                        Juni 2026 – Oktober 2026
+                                    </span>
+                                    <span class="text-xs font-bold text-slate-500">IT & System Development</span>
+                                </div>
+                                <h3 class="font-display font-extrabold text-lg sm:text-xl text-slate-950">
+                                    IT Web Development
+                                </h3>
+                                <p class="text-xs sm:text-sm font-bold text-blue-600 mb-3">
+                                    Pengembangan, Update & Pemeliharaan Sistem Perusahaan
+                                </p>
+                                <ul class="space-y-2 text-xs sm:text-sm text-slate-700">
+                                    <li class="flex items-start gap-2.5">
+                                        <i class="fa-solid fa-circle-check text-blue-600 mt-1 shrink-0"></i>
+                                        <span><strong class="text-slate-950">Pembuatan Sistem Perusahaan:</strong> Bertanggung jawab membangun aplikasi dan sistem informasi internal sesuai kebutuhan operasional perusahaan.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <i class="fa-solid fa-circle-check text-blue-600 mt-1 shrink-0"></i>
+                                        <span><strong class="text-slate-950">Update Sistem Perusahaan:</strong> Melakukan pembaruan fitur, peningkatan performa, dan penyesuaian modul sistem secara berkala.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <i class="fa-solid fa-circle-check text-blue-600 mt-1 shrink-0"></i>
+                                        <span><strong class="text-slate-950">Pemeliharaan Database hingga Backend:</strong> Menjaga kestabilan dan keamanan sistem mulai dari manajemen database MySQL sampai dengan fungsi logika backend.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Pengalaman 2: Freelance Nuansa Wangi -->
+                        <div class="relative">
+                            <span class="absolute -left-[33px] sm:-left-[41px] top-1.5 w-4 h-4 rounded-full bg-slate-950 ring-4 ring-slate-200"></span>
+                            <div class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200 shadow-sm hover:border-blue-600 transition-all">
+                                <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                                    <span class="px-3 py-1 rounded-full text-xs font-bold bg-slate-950 text-white">
+                                        Februari 2026 – April 2026
+                                    </span>
+                                    <span class="text-xs font-bold text-slate-500">Produksi & Gudang</span>
+                                </div>
+                                <h3 class="font-display font-extrabold text-lg sm:text-xl text-slate-950">
+                                    Freelance – Nuansa Wangi
+                                </h3>
+                                <p class="text-xs sm:text-sm font-bold text-blue-600 mb-3">
+                                    Penanggung Jawab Produksi & Stok Gudang
+                                </p>
+                                <ul class="space-y-2 text-xs sm:text-sm text-slate-700">
+                                    <li class="flex items-start gap-2.5">
+                                        <i class="fa-solid fa-circle-check text-blue-600 mt-1 shrink-0"></i>
+                                        <span><strong class="text-slate-950">Kontrol Produksi & Stok Gudang:</strong> Bertanggung jawab penuh atas jalannya proses produksi serta pencatatan keluar-masuk stok barang di gudang.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <i class="fa-solid fa-circle-check text-blue-600 mt-1 shrink-0"></i>
+                                        <span><strong class="text-slate-950">Quality Control & Akurasi Inventaris:</strong> Memastikan kualitas produk terjaga dan jumlah stok fisik gudang selalu akurat sesuai laporan.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Pengalaman 3: Supervisor JS Kalibata City -->
+                        <div class="relative">
+                            <span class="absolute -left-[33px] sm:-left-[41px] top-1.5 w-4 h-4 rounded-full bg-blue-600 ring-4 ring-blue-100"></span>
+                            <div class="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200 shadow-sm hover:border-blue-600 transition-all">
+                                <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                                    <span class="px-3 py-1 rounded-full text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
+                                        Februari 2023 – April 2025
+                                    </span>
+                                    <span class="text-xs font-bold text-slate-500">Supervisi, Data & Payroll</span>
+                                </div>
+                                <h3 class="font-display font-extrabold text-lg sm:text-xl text-slate-950">
+                                    Supervisor – JS Kalibata City
+                                </h3>
+                                <p class="text-xs sm:text-sm font-bold text-blue-600 mb-3">
+                                    Manajemen Laporan Global, Pengurusan Gaji & Strategi Tim
+                                </p>
+                                <ul class="space-y-2 text-xs sm:text-sm text-slate-700">
+                                    <li class="flex items-start gap-2.5">
+                                        <i class="fa-solid fa-circle-check text-blue-600 mt-1 shrink-0"></i>
+                                        <span><strong class="text-slate-950">Input Data Laporan Global:</strong> Menginput dan merekapitulasi data operasional untuk laporan global secara <strong class="text-slate-950">harian, mingguan, serta bulanan</strong>.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <i class="fa-solid fa-circle-check text-blue-600 mt-1 shrink-0"></i>
+                                        <span><strong class="text-slate-950">Pengurusan Gaji Karyawan:</strong> Mengelola administrasi kehadiran, evaluasi kerja, dan perhitungan gaji karyawan secara tepat waktu.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <i class="fa-solid fa-circle-check text-blue-600 mt-1 shrink-0"></i>
+                                        <span><strong class="text-slate-950">Penyusunan Strategi Tim:</strong> Merancang strategi kerja dan target operasional tim untuk <strong class="text-slate-950">1 bulan ke depan</strong>.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Kolom Kanan: Pendidikan Formal (5 Kolom) -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="flex items-center gap-3.5 mb-8">
+                        <div class="w-11 h-11 rounded-2xl bg-slate-950 text-white flex items-center justify-center text-lg shadow-sm">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-extrabold uppercase tracking-widest text-blue-600">LATAR BELAKANG AKADEMIK</span>
+                            <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-slate-950">
+                                Informasi Pendidikan
+                            </h2>
+                        </div>
+                    </div>
+
+                    <!-- Pendidikan 1: S1 Informatika -->
+                    <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-blue-600 text-white">
+                                2022 – 2026
+                            </span>
+                            <span class="text-xs font-extrabold text-blue-600 flex items-center gap-1">
+                                <i class="fa-solid fa-user-graduate"></i> Pendidikan Tinggi (S1)
+                            </span>
+                        </div>
+                        <h3 class="font-display font-extrabold text-xl text-slate-950">
+                            S1 Informatika
+                        </h3>
+                        <p class="text-xs sm:text-sm text-slate-600 mt-1 mb-4">
+                            Fokus pembelajaran dan keahlian terapan selama masa perkuliahan:
+                        </p>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-3 border-t border-slate-100">
+                            <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-200 text-xs font-bold text-slate-900 flex items-center gap-2">
+                                <i class="fa-solid fa-chart-pie text-blue-600"></i> Data Analysis
+                            </div>
+                            <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-200 text-xs font-bold text-slate-900 flex items-center gap-2">
+                                <i class="fa-solid fa-clipboard-check text-blue-600"></i> Quality Control
+                            </div>
+                            <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-200 text-xs font-bold text-slate-900 flex items-center gap-2">
+                                <i class="fa-solid fa-keyboard text-blue-600"></i> Data Entry
+                            </div>
+                            <div class="p-2.5 rounded-xl bg-slate-50 border border-slate-200 text-xs font-bold text-slate-900 flex items-center gap-2">
+                                <i class="fa-solid fa-code text-blue-600"></i> Full-Stack Web Dev
+                            </div>
+                        </div>
+                        <div class="mt-2 p-2.5 rounded-xl bg-blue-50 border border-blue-200 text-xs font-bold text-blue-800 flex items-center gap-2">
+                            <i class="fa-solid fa-diagram-project text-blue-600"></i> Pengerjaan Projek Sistem Informasi & Pemesanan Sistem
+                        </div>
+                    </div>
+
+                    <!-- Pendidikan 2: SMAN 2 Cibeber -->
+                    <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <span class="px-3 py-1 rounded-full text-xs font-bold bg-slate-950 text-white">
+                                2019 – 2022
+                            </span>
+                            <span class="text-xs font-bold text-slate-500">Sekolah Menengah Atas</span>
+                        </div>
+                        <h3 class="font-display font-extrabold text-lg sm:text-xl text-slate-950">
+                            SMAN 2 Cibeber
+                        </h3>
+                        <p class="text-xs sm:text-sm font-bold text-blue-600 mt-0.5">
+                            Jurusan Ilmu Pengetahuan Sosial (IPS)
+                        </p>
+                        <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+                            Menempuh pendidikan menengah atas di Kecamatan Cibeber, Kabupaten Lebak, Banten dengan fokus ilmu sosial, ekonomi, dan administrasi.
+                        </p>
+                    </div>
+
+                    <!-- Kartu Hitam-Biru Komitmen Kerja -->
+                    <div class="rounded-2xl p-6 bg-slate-950 text-white border border-slate-800 shadow-lg">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-display font-bold text-base text-white">Kesiapan Kerja & Pemesanan Sistem</h4>
+                                <p class="text-xs text-blue-300 font-medium">Siap Mengikuti Seleksi & Rekrutmen Perusahaan</p>
+                            </div>
+                        </div>
+                        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
+                            Selain mencari peluang karir penuh waktu (Full-Time) di perusahaan, saya juga berpengalaman mengerjakan berbagai pesanan pembuatan sistem informasi sejak masa kuliah.
+                        </p>
+                        <a href="#kontak" class="w-full py-3 px-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs flex items-center justify-center gap-2 transition-colors no-print">
+                            <i class="fa-solid fa-phone"></i> Lihat Kontak & Hubungi Saya
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =================================================================
+             4. DAFTAR 8 PROYEK SISTEM INFORMASI (DIATUR LANGSUNG DI KODE)
+        ================================================================== -->
+        <section id="proyek" class="py-14 border-t border-slate-200">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+                <div>
+                    <span class="inline-block px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-xs font-extrabold uppercase tracking-widest text-blue-700">
+                        HASIL KARYA & PROYEK SISTEM
+                    </span>
+                    <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-slate-950 mt-2">
+                        8 Proyek Sistem Informasi yang Telah Dikerjakan
+                    </h2>
+                    <p class="text-sm sm:text-base text-slate-600 mt-1.5 max-w-2xl">
+                        Proyek yang dikerjakan selama masa kuliah serta penerimaan pesanan pembuatan sistem aplikasi web dan database.
+                    </p>
+                </div>
+
+                <!-- Filter Kategori Proyek -->
+                <div class="flex flex-wrap gap-2 no-print" id="projectFilters">
+                    <button onclick="filterProjects('all')" data-filter="all" class="project-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-sm transition-all">
+                        Semua (8)
+                    </button>
+                    <button onclick="filterProjects('enterprise')" data-filter="enterprise" class="project-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white border border-slate-300 text-slate-800 hover:border-blue-600 hover:text-blue-600 transition-all">
+                        Back-Office & Keuangan
+                    </button>
+                    <button onclick="filterProjects('commerce')" data-filter="commerce" class="project-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white border border-slate-300 text-slate-800 hover:border-blue-600 hover:text-blue-600 transition-all">
+                        E-Commerce, POS & Tiket
+                    </button>
+                    <button onclick="filterProjects('intelligent')" data-filter="intelligent" class="project-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white border border-slate-300 text-slate-800 hover:border-blue-600 hover:text-blue-600 transition-all">
+                        Sistem Pakar, SPK & Desa
+                    </button>
+                </div>
+            </div>
+
+            <!-- Grid 8 Proyek -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="projectsGrid">
+
+                <!-- PROJEK 1: Halal Center Yahida -->
+                <article class="project-card bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:border-blue-600 hover:shadow-md transition-all" data-category="enterprise">
+                    <div>
+                        <div class="relative aspect-video bg-slate-950 overflow-hidden border-b border-slate-200">
+                            <!-- =================================================================
+                                 [TANDA GANTI FOTO 2 - FOTO PROYEK 1: HALAL CENTER YAHIDA]
+                                 Masukkan nama file foto proyek 1 pada bagian src="..." di bawah ini.
+                                 Contoh: src="img/projek-1.jpg"
+                            ================================================================== -->
+                            <img 
+                                id="photo-projek-1"
+                                src="img/yahida.png" 
+                                onerror="this.onerror=null; this.src='https://placehold.co/600x360/090d16/38bdf8?text=Halal+Center+Yahida%0ABack+Office+%26+HR+System';"
+                                alt="Sistem Back Office dan Pengajuan Halal Center Yahida" 
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            >
+                            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider bg-slate-950/90 text-white border border-white/15">
+                                Back-Office & HR
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-display font-extrabold text-base text-slate-950 leading-snug mb-2">
+                                Sistem Back Office, Pekerjaan Karyawan & Pengajuan Halal – Halal Center Yahida
+                            </h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Sistem informasi terintegrasi untuk administrasi back-office, pemantauan pekerjaan karyawan, dan tracking pengajuan sertifikasi halal.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-3 border-t border-slate-100 flex items-center justify-between gap-2">
+                        <div class="flex flex-wrap gap-1">
+                            <span class="px-2 py-0.5 text-[10px] rounded bg-blue-50 text-blue-700 font-bold">Full-Stack</span>
+                            <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-800 font-semibold">MySQL</span>
+                        </div>
+                        <button onclick="openProjectModal(0)" class="text-xs font-extrabold text-blue-600 hover:text-slate-950 flex items-center gap-1">
+                            Detail Sistem <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PROJEK 2: E-Commerce Penjualan Gamis -->
+                <article class="project-card bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:border-blue-600 hover:shadow-md transition-all" data-category="commerce">
+                    <div>
+                        <div class="relative aspect-video bg-slate-950 overflow-hidden border-b border-slate-200">
+                            <!-- =================================================================
+                                 [TANDA GANTI FOTO 3 - FOTO PROYEK 2: E-COMMERCE PENJUALAN GAMIS]
+                                 Masukkan nama file foto proyek 2 pada bagian src="..." di bawah ini.
+                                 Contoh: src="img/projek-2.jpg"
+                            ================================================================== -->
+                            <img 
+                                id="photo-projek-2"
+                                src="img/minimislim.png" 
+                                onerror="this.onerror=null; this.src='https://placehold.co/600x360/1e3a8a/ffffff?text=E-Commerce+Gamis%0AOnline+Fashion+Store';"
+                                alt="E-Commerce Penjualan Gamis" 
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            >
+                            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider bg-blue-600 text-white">
+                                E-Commerce
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-display font-extrabold text-base text-slate-950 leading-snug mb-2">
+                                Sistem E-Commerce Penjualan Gamis
+                            </h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Website toko online busana muslim dengan katalog produk, manajemen ukuran/warna, keranjang belanja, checkout pesanan, dan panel admin.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-3 border-t border-slate-100 flex items-center justify-between gap-2">
+                        <div class="flex flex-wrap gap-1">
+                            <span class="px-2 py-0.5 text-[10px] rounded bg-blue-50 text-blue-700 font-bold">Web Store</span>
+                            <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-800 font-semibold">MySQL</span>
+                        </div>
+                        <button onclick="openProjectModal(1)" class="text-xs font-extrabold text-blue-600 hover:text-slate-950 flex items-center gap-1">
+                            Detail Sistem <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PROJEK 3: Sistem Informasi Penjualan Kedai EsTehDewa -->
+                <article class="project-card bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:border-blue-600 hover:shadow-md transition-all" data-category="commerce">
+                    <div>
+                        <div class="relative aspect-video bg-slate-950 overflow-hidden border-b border-slate-200">
+                            <!-- =================================================================
+                                 [TANDA GANTI FOTO 4 - FOTO PROYEK 3: PENJUALAN KEDAI ESTEHDEWA]
+                                 Masukkan nama file foto proyek 3 pada bagian src="..." di bawah ini.
+                                 Contoh: src="img/projek-3.jpg"
+                            ================================================================== -->
+                            <img 
+                                id="photo-projek-3"
+                                src="img/dewa.png" 
+                                onerror="this.onerror=null; this.src='https://placehold.co/600x360/090d16/38bdf8?text=Kedai+EsTehDewa%0APOS+%26+Sales+System';"
+                                alt="Sistem Informasi Penjualan Kedai EsTehDewa" 
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            >
+                            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider bg-slate-950/90 text-white border border-white/15">
+                                POS & Penjualan
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-display font-extrabold text-base text-slate-950 leading-snug mb-2">
+                                Sistem Informasi Penjualan Kedai EsTehDewa
+                            </h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Aplikasi Point of Sale (POS) untuk pencatatan transaksi kasir cepat, kontrol stok bahan baku minuman, dan rekap laporan penjualan kedai.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-3 border-t border-slate-100 flex items-center justify-between gap-2">
+                        <div class="flex flex-wrap gap-1">
+                            <span class="px-2 py-0.5 text-[10px] rounded bg-blue-50 text-blue-700 font-bold">POS Kasir</span>
+                            <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-800 font-semibold">Laporan Omzet</span>
+                        </div>
+                        <button onclick="openProjectModal(2)" class="text-xs font-extrabold text-blue-600 hover:text-slate-950 flex items-center gap-1">
+                            Detail Sistem <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PROJEK 4: Sistem Pakar Diagnosa AC Sharp -->
+                <article class="project-card bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:border-blue-600 hover:shadow-md transition-all" data-category="intelligent">
+                    <div>
+                        <div class="relative aspect-video bg-slate-950 overflow-hidden border-b border-slate-200">
+                            <!-- =================================================================
+                                 [TANDA GANTI FOTO 5 - FOTO PROYEK 4: SISTEM PAKAR AC SHARP]
+                                 Masukkan nama file foto proyek 4 pada bagian src="..." di bawah ini.
+                                 Contoh: src="img/projek-4.jpg"
+                            ================================================================== -->
+                            <img 
+                                id="photo-projek-4"
+                                src="img/sp.png" 
+                                onerror="this.onerror=null; this.src='https://placehold.co/600x360/1e3a8a/ffffff?text=Sistem+Pakar+AC+Sharp%0ADiagnostic+System';"
+                                alt="Sistem Pakar Diagnosa AC Sharp" 
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            >
+                            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider bg-blue-600 text-white">
+                                Sistem Pakar
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-display font-extrabold text-base text-slate-950 leading-snug mb-2">
+                                Sistem Pakar Diagnosa Kerusakan AC Sharp
+                            </h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Sistem berbasis aturan pengetahuan untuk mendiagnosa jenis kerusakan unit AC Sharp berdasarkan gejala teknis beserta solusi perbaikannya.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-3 border-t border-slate-100 flex items-center justify-between gap-2">
+                        <div class="flex flex-wrap gap-1">
+                            <span class="px-2 py-0.5 text-[10px] rounded bg-blue-50 text-blue-700 font-bold">Expert System</span>
+                            <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-800 font-semibold">Web App</span>
+                        </div>
+                        <button onclick="openProjectModal(3)" class="text-xs font-extrabold text-blue-600 hover:text-slate-950 flex items-center gap-1">
+                            Detail Sistem <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PROJEK 5: Pemetaan Potensi Desa Citorek Timur -->
+                <article class="project-card bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:border-blue-600 hover:shadow-md transition-all" data-category="intelligent">
+                    <div>
+                        <div class="relative aspect-video bg-slate-950 overflow-hidden border-b border-slate-200">
+                            <!-- =================================================================
+                                 [TANDA GANTI FOTO 6 - FOTO PROYEK 5: PEMETAAN DESA CITOREK TIMUR]
+                                 Masukkan nama file foto proyek 5 pada bagian src="..." di bawah ini.
+                                 Contoh: src="img/projek-5.jpg"
+                            ================================================================== -->
+                            <img 
+                                id="photo-projek-5"
+                                src="img/potensi_desa.png" 
+                                onerror="this.onerror=null; this.src='https://placehold.co/600x360/090d16/38bdf8?text=Desa+Citorek+Timur%0APemetaan+Potensi+Desa';"
+                                alt="Pemetaan Potensi Desa Citorek Timur" 
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            >
+                            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider bg-slate-950/90 text-white border border-white/15">
+                                Sistem Desa
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-display font-extrabold text-base text-slate-950 leading-snug mb-2">
+                                Sistem Pemetaan Potensi Desa Citorek Timur
+                            </h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Platform digitalisasi data wilayah Desa Citorek Timur untuk memetakan potensi pertanian, UMKM warga, demografi, dan infrastruktur desa.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-3 border-t border-slate-100 flex items-center justify-between gap-2">
+                        <div class="flex flex-wrap gap-1">
+                            <span class="px-2 py-0.5 text-[10px] rounded bg-blue-50 text-blue-700 font-bold">GIS Desa</span>
+                            <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-800 font-semibold">Data Potensi</span>
+                        </div>
+                        <button onclick="openProjectModal(4)" class="text-xs font-extrabold text-blue-600 hover:text-slate-950 flex items-center gap-1">
+                            Detail Sistem <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PROJEK 6: Inventory dan Keuangan Puspa Jaya Pool -->
+                <article class="project-card bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:border-blue-600 hover:shadow-md transition-all" data-category="enterprise">
+                    <div>
+                        <div class="relative aspect-video bg-slate-950 overflow-hidden border-b border-slate-200">
+                            <!-- =================================================================
+                                 [TANDA GANTI FOTO 7 - FOTO PROYEK 6: INVENTORY PUSPA JAYA POOL]
+                                 Masukkan nama file foto proyek 6 pada bagian src="..." di bawah ini.
+                                 Contoh: src="img/projek-6.jpg"
+                            ================================================================== -->
+                            <img 
+                                id="photo-projek-6"
+                                src="img/puspa.png" 
+                                onerror="this.onerror=null; this.src='https://placehold.co/600x360/1e3a8a/ffffff?text=Puspa+Jaya+Pool%0AInventory+%26+Keuangan';"
+                                alt="Inventory dan Keuangan Puspa Jaya Pool" 
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            >
+                            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider bg-blue-600 text-white">
+                                Inventory & Finance
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-display font-extrabold text-base text-slate-950 leading-snug mb-2">
+                                Sistem Inventory & Keuangan Puspa Jaya Pool
+                            </h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Sistem manajemen stok gudang yang terintegrasi langsung dengan pencatatan arus kas masuk/keluar, biaya operasional, dan laporan keuangan.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-3 border-t border-slate-100 flex items-center justify-between gap-2">
+                        <div class="flex flex-wrap gap-1">
+                            <span class="px-2 py-0.5 text-[10px] rounded bg-blue-50 text-blue-700 font-bold">Stok Gudang</span>
+                            <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-800 font-semibold">Keuangan</span>
+                        </div>
+                        <button onclick="openProjectModal(5)" class="text-xs font-extrabold text-blue-600 hover:text-slate-950 flex items-center gap-1">
+                            Detail Sistem <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PROJEK 7: Sistem Pemesanan Tiket Goa Baduy Sukabumi -->
+                <article class="project-card bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:border-blue-600 hover:shadow-md transition-all" data-category="commerce">
+                    <div>
+                        <div class="relative aspect-video bg-slate-950 overflow-hidden border-b border-slate-200">
+                            <!-- =================================================================
+                                 [TANDA GANTI FOTO 8 - FOTO PROYEK 7: TIKET GOA BADUY SUKABUMI]
+                                 Masukkan nama file foto proyek 7 pada bagian src="..." di bawah ini.
+                                 Contoh: src="img/projek-7.jpg"
+                            ================================================================== -->
+                            <img 
+                                id="photo-projek-7"
+                                src="img/wana.png" 
+                                onerror="this.onerror=null; this.src='https://placehold.co/600x360/090d16/38bdf8?text=Goa+Baduy+Sukabumi%0AE-Ticketing+Wisata';"
+                                alt="Sistem Pemesanan Tiket Goa Baduy Sukabumi" 
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            >
+                            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider bg-slate-950/90 text-white border border-white/15">
+                                E-Ticketing
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-display font-extrabold text-base text-slate-950 leading-snug mb-2">
+                                Sistem Pemesanan Tiket Wisata Goa Baduy Sukabumi
+                            </h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Portal reservasi tiket pengunjung online dilengkapi manajemen kuota harian, jadwal kunjungan, konfirmasi pembayaran, dan cetak tiket digital.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-3 border-t border-slate-100 flex items-center justify-between gap-2">
+                        <div class="flex flex-wrap gap-1">
+                            <span class="px-2 py-0.5 text-[10px] rounded bg-blue-50 text-blue-700 font-bold">Reservasi</span>
+                            <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-800 font-semibold">E-Ticket</span>
+                        </div>
+                        <button onclick="openProjectModal(6)" class="text-xs font-extrabold text-blue-600 hover:text-slate-950 flex items-center gap-1">
+                            Detail Sistem <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- PROJEK 8: Sistem Pendukung Keputusan Binsa Insan Mandiri Baron Bogor -->
+                <article class="project-card bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between group hover:border-blue-600 hover:shadow-md transition-all" data-category="intelligent">
+                    <div>
+                        <div class="relative aspect-video bg-slate-950 overflow-hidden border-b border-slate-200">
+                            <!-- =================================================================
+                                 [TANDA GANTI FOTO 9 - FOTO PROYEK 8: SPK BINSA INSAN MANDIRI BOGOR]
+                                 Masukkan nama file foto proyek 8 pada bagian src="..." di bawah ini.
+                                 Contoh: src="img/projek-8.jpg"
+                            ================================================================== -->
+                            <img 
+                                id="photo-projek-8"
+                                src="img/spk.png" 
+                                onerror="this.onerror=null; this.src='https://placehold.co/600x360/1e3a8a/ffffff?text=SPK+Binsa+Insan+Mandiri%0ABaron+Bogor';"
+                                alt="Sistem Pendukung Keputusan Binsa Insan Mandiri Baron Bogor" 
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            >
+                            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider bg-blue-600 text-white">
+                                Sistem SPK / DSS
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <h3 class="font-display font-extrabold text-base text-slate-950 leading-snug mb-2">
+                                Sistem Pendukung Keputusan (SPK) Binsa Insan Mandiri Baron Bogor
+                            </h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Sistem komputasi analitis berbasis pembobotan multi-kriteria untuk membantu proses evaluasi, perankingan objektif, dan pengambilan keputusan.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-3 border-t border-slate-100 flex items-center justify-between gap-2">
+                        <div class="flex flex-wrap gap-1">
+                            <span class="px-2 py-0.5 text-[10px] rounded bg-blue-50 text-blue-700 font-bold">SPK / DSS</span>
+                            <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-800 font-semibold">Multi-Kriteria</span>
+                        </div>
+                        <button onclick="openProjectModal(7)" class="text-xs font-extrabold text-blue-600 hover:text-slate-950 flex items-center gap-1">
+                            Detail Sistem <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- =================================================================
+             5. SERTIFIKAT KOMPETENSI & PELATIHAN
+        ================================================================== -->
+        <section id="sertifikat" class="py-14 border-t border-slate-200">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="inline-block px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-xs font-extrabold uppercase tracking-widest text-blue-700">
+                    LISENSI & SERTIFIKASI RESMI
+                </span>
+                <h2 class="font-display font-extrabold text-2xl sm:text-4xl text-slate-950 mt-2">
+                    4 Sertifikat Kompetensi & Rekognisi
+                </h2>
+                <p class="text-sm sm:text-base text-slate-600 mt-1.5">
+                    Klik pada gambar sertifikat atau tombol <strong>"Lihat Sertifikat"</strong> untuk memperbesar tampilan penuh.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <!-- SERTIFIKAT 1: BNSP Junior Web Developer 2026 -->
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col sm:flex-row hover:border-blue-600 hover:shadow-md transition-all">
+                    <div class="relative sm:w-52 md:w-48 lg:w-56 aspect-video sm:aspect-auto bg-slate-950 shrink-0 overflow-hidden border-b sm:border-b-0 sm:border-r border-slate-200">
+                        <!-- =================================================================
+                             [TANDA GANTI FOTO 10 - FOTO SERTIFIKAT 1: BNSP WEB JUNIOR 2026]
+                             Masukkan nama file foto sertifikat 1 pada bagian src="..." di bawah ini.
+                             Contoh: src="img/sertifikat-1.jpg"
+                        ================================================================== -->
+                        <img 
+                            id="photo-sertifikat-1"
+                            src="img/sertifikat-1.jpg" 
+                            onerror="this.onerror=null; this.src='https://placehold.co/500x360/090d16/38bdf8?text=SERTIFIKAT+BNSP%0AWeb+Junior+Development+2026';"
+                            alt="Sertifikat BNSP Web Junior Development 2026" 
+                            class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform"
+                            onclick="previewCertificate('photo-sertifikat-1', 'Sertifikat BNSP – Web Junior Development (2026)')"
+                        >
+                    </div>
+                    <div class="p-5 flex flex-col justify-between flex-1">
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-2">
+                                <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-blue-600 text-white">
+                                    Sertifikasi BNSP • 2026
+                                </span>
+                                <i class="fa-solid fa-certificate text-blue-600 text-lg"></i>
+                            </div>
+                            <h3 class="font-display font-extrabold text-base sm:text-lg text-slate-950 leading-snug mb-1.5">
+                                Sertifikat BNSP Web Junior Development
+                            </h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Sertifikasi kompetensi resmi Badan Nasional Sertifikasi Profesi (BNSP) pada bidang pembangunan dan pemrograman aplikasi web.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                            <span class="text-slate-500 font-semibold text-[11px]">Lisensi Kompetensi Nasional</span>
+                            <button onclick="previewCertificate('photo-sertifikat-1', 'Sertifikat BNSP – Web Junior Development (2026)')" class="font-extrabold text-blue-600 hover:text-slate-950 flex items-center gap-1">
+                                <i class="fa-solid fa-expand"></i> Lihat Sertifikat
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SERTIFIKAT 2: Pelatihan Cara Menggunakan AI Sebagai Narasumber 2024 -->
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col sm:flex-row hover:border-blue-600 hover:shadow-md transition-all">
+                    <div class="relative sm:w-52 md:w-48 lg:w-56 aspect-video sm:aspect-auto bg-slate-950 shrink-0 overflow-hidden border-b sm:border-b-0 sm:border-r border-slate-200">
+                        <!-- =================================================================
+                             [TANDA GANTI FOTO 11 - FOTO SERTIFIKAT 2: NARASUMBER AI 2024]
+                             Masukkan nama file foto sertifikat 2 pada bagian src="..." di bawah ini.
+                             Contoh: src="img/sertifikat-2.jpg"
+                        ================================================================== -->
+                        <img 
+                            id="photo-sertifikat-2"
+                            src="img/sertifikat-2.jpg" 
+                            onerror="this.onerror=null; this.src='https://placehold.co/500x360/1e3a8a/ffffff?text=SERTIFIKAT+NARASUMBER%0APelatihan+AI+2024';"
+                            alt="Sertifikat Pelatihan Cara Menggunakan AI Sebagai Narasumber 2024" 
+                            class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform"
+                            onclick="previewCertificate('photo-sertifikat-2', 'Pelatihan Cara Menggunakan AI – Sebagai Narasumber (2024)')"
+                        >
+                    </div>
+                    <div class="p-5 flex flex-col justify-between flex-1">
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-2">
+                                <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-slate-950 text-white">
+                                    Narasumber • 2024
+                                </span>
+                                <i class="fa-solid fa-microphone-lines text-blue-600 text-lg"></i>
+                            </div>
+                            <h3 class="font-display font-extrabold text-base sm:text-lg text-slate-950 leading-snug mb-1.5">
+                                Pelatihan Cara Menggunakan AI (Sebagai Narasumber)
+                            </h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Penghargaan sebagai pemateri/narasumber dalam pelatihan pemanfaatan teknologi Artificial Intelligence (AI) secara efektif dan produktif.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                            <span class="text-slate-500 font-semibold text-[11px]">Pemateri & Edukasi AI</span>
+                            <button onclick="previewCertificate('photo-sertifikat-2', 'Pelatihan Cara Menggunakan AI – Sebagai Narasumber (2024)')" class="font-extrabold text-blue-600 hover:text-slate-950 flex items-center gap-1">
+                                <i class="fa-solid fa-expand"></i> Lihat Sertifikat
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SERTIFIKAT 3: Sertifikat MySQL -->
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col sm:flex-row hover:border-blue-600 hover:shadow-md transition-all">
+                    <div class="relative sm:w-52 md:w-48 lg:w-56 aspect-video sm:aspect-auto bg-slate-950 shrink-0 overflow-hidden border-b sm:border-b-0 sm:border-r border-slate-200">
+                        <!-- =================================================================
+                             [TANDA GANTI FOTO 12 - FOTO SERTIFIKAT 3: SERTIFIKAT MYSQL]
+                             Masukkan nama file foto sertifikat 3 pada bagian src="..." di bawah ini.
+                             Contoh: src="img/sertifikat-3.jpg"
+                        ================================================================== -->
+                        <img 
+                            id="photo-sertifikat-3"
+                            src="img/sertifikat-3.jpg" 
+                            onerror="this.onerror=null; this.src='https://placehold.co/500x360/090d16/38bdf8?text=SERTIFIKAT+MySQL%0ADatabase+Management';"
+                            alt="Sertifikat Kompetensi MySQL" 
+                            class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform"
+                            onclick="previewCertificate('photo-sertifikat-3', 'Sertifikat Kompetensi Database MySQL')"
+                        >
+                    </div>
+                    <div class="p-5 flex flex-col justify-between flex-1">
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-2">
+                                <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-blue-50 text-blue-700 border border-blue-200">
+                                    Database Management
+                                </span>
+                                <i class="fa-solid fa-database text-blue-600 text-lg"></i>
+                            </div>
+                            <h3 class="font-display font-extrabold text-base sm:text-lg text-slate-950 leading-snug mb-1.5">
+                                Sertifikat Kompetensi Database MySQL
+                            </h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Sertifikasi penguasaan perancangan struktur database relasional, query SQL, serta pemeliharaan basis data aplikasi sistem informasi.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                            <span class="text-slate-500 font-semibold text-[11px]">Relational Database & SQL</span>
+                            <button onclick="previewCertificate('photo-sertifikat-3', 'Sertifikat Kompetensi Database MySQL')" class="font-extrabold text-blue-600 hover:text-slate-950 flex items-center gap-1">
+                                <i class="fa-solid fa-expand"></i> Lihat Sertifikat
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SERTIFIKAT 4: Peran Teknologi Dalam Membangun Dunia Masa Depan 2022 -->
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col sm:flex-row hover:border-blue-600 hover:shadow-md transition-all">
+                    <div class="relative sm:w-52 md:w-48 lg:w-56 aspect-video sm:aspect-auto bg-slate-950 shrink-0 overflow-hidden border-b sm:border-b-0 sm:border-r border-slate-200">
+                        <!-- =================================================================
+                             [TANDA GANTI FOTO 13 - FOTO SERTIFIKAT 4: SEMINAR TEKNOLOGI 2022]
+                             Masukkan nama file foto sertifikat 4 pada bagian src="..." di bawah ini.
+                             Contoh: src="img/sertifikat-4.jpg"
+                        ================================================================== -->
+                        <img 
+                            id="photo-sertifikat-4"
+                            src="img/sertifikat-4.jpg" 
+                            onerror="this.onerror=null; this.src='https://placehold.co/500x360/1e3a8a/ffffff?text=SERTIFIKAT+PESERTA+2022%0APeran+Teknologi+Masa+Depan';"
+                            alt="Sertifikat Peserta Peran Teknologi Dalam Membangun Dunia Masa Depan 2022" 
+                            class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform"
+                            onclick="previewCertificate('photo-sertifikat-4', 'Sertifikat Peserta: Peran Teknologi Dalam Membangun Dunia Masa Depan (2022)')"
+                        >
+                    </div>
+                    <div class="p-5 flex flex-col justify-between flex-1">
+                        <div>
+                            <div class="flex items-center justify-between gap-2 mb-2">
+                                <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-slate-100 text-slate-800 border border-slate-300">
+                                    Seminar Teknologi • 2022
+                                </span>
+                                <i class="fa-solid fa-award text-blue-600 text-lg"></i>
+                            </div>
+                            <h3 class="font-display font-extrabold text-base sm:text-lg text-slate-950 leading-snug mb-1.5">
+                                Sertifikat Peserta: Peran Teknologi Dalam Membangun Dunia Masa Depan
+                            </h3>
+                            <p class="text-xs text-slate-600 leading-relaxed">
+                                Sertifikat partisipasi aktif dalam kegiatan seminar nasional pengembangan wawasan teknologi informasi masa depan tahun 2022.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                            <span class="text-slate-500 font-semibold text-[11px]">Wawasan Teknologi Masa Depan</span>
+                            <button onclick="previewCertificate('photo-sertifikat-4', 'Sertifikat Peserta: Peran Teknologi Dalam Membangun Dunia Masa Depan (2022)')" class="font-extrabold text-blue-600 hover:text-slate-950 flex items-center gap-1">
+                                <i class="fa-solid fa-expand"></i> Lihat Sertifikat
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =================================================================
+             6. INFORMASI KONTAK PRIBADI SAMSUL RIZAL
+        ================================================================== -->
+        <section id="kontak" class="py-14 border-t border-slate-200">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Kolom Kiri: Daftar Kontak Resmi Samsul Rizal -->
+                <div class="lg:col-span-5 space-y-5">
+                    <div>
+                        <span class="inline-block px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-xs font-extrabold uppercase tracking-widest text-blue-700">
+                            INFORMASI KONTAK KANDIDAT
+                        </span>
+                        <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-slate-950 mt-2">
+                            Hubungi Samsul Rizal
+                        </h2>
+                        <p class="text-sm text-slate-600 mt-1.5 leading-relaxed">
+                            Silakan hubungi saya melalui nomor telepon/WhatsApp, email, atau LinkedIn di bawah ini untuk keperluan rekrutmen kerja maupun pemesanan pembuatan sistem.
+                        </p>
+                    </div>
+
+                    <div class="space-y-3">
+                        <!-- Nomor Telepon / WhatsApp -->
+                        <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex items-center justify-between gap-3">
+                            <div class="flex items-center gap-3.5 min-w-0">
+                                <div class="w-11 h-11 rounded-xl bg-blue-600 text-white flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                                <div class="min-w-0">
+                                    <div class="text-[11px] uppercase font-bold tracking-wider text-slate-500">Nomor Telepon / WhatsApp</div>
+                                    <div class="text-sm sm:text-base font-extrabold text-slate-950 truncate contact-phone-text">+62 812-8888-9999</div>
+                                </div>
+                            </div>
+                            <a id="cardWaLink" href="https://wa.me/6282113234195" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-blue-600 hover:bg-slate-950 text-white text-xs font-bold shrink-0 transition-colors no-print">
+                                Chat WA
+                            </a>
+                        </div>
+
+                        <!-- Alamat Email -->
+                        <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex items-center justify-between gap-3">
+                            <div class="flex items-center gap-3.5 min-w-0">
+                                <div class="w-11 h-11 rounded-xl bg-slate-950 text-white flex items-center justify-center text-lg shrink-0">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="min-w-0">
+                                    <div class="text-[11px] uppercase font-bold tracking-wider text-slate-500">Email Pribadi</div>
+                                    <div class="text-sm sm:text-base font-extrabold text-slate-950 truncate contact-email-text">samsul.rizal@email.com</div>
+                                </div>
+                            </div>
+                            <button onclick="copyEmailAddress()" class="px-4 py-2 rounded-xl bg-slate-100 hover:bg-blue-600 hover:text-white text-slate-900 text-xs font-bold shrink-0 transition-colors no-print">
+                                Salin
+                            </button>
+                        </div>
+
+                        <!-- LinkedIn -->
+                        <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex items-center justify-between gap-3">
+                            <div class="flex items-center gap-3.5 min-w-0">
+                                <div class="w-11 h-11 rounded-xl bg-blue-600 text-white flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </div>
+                                <div class="min-w-0">
+                                    <div class="text-[11px] uppercase font-bold tracking-wider text-slate-500">Sosial Media LinkedIn</div>
+                                    <div class="text-sm font-extrabold text-slate-950 truncate contact-linkedin-text">linkedin.com/in/samsul-rizal</div>
+                                </div>
+                            </div>
+                            <a id="cardLinkedinLink" href="https://linkedin.com/in/samsul-rizal" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-slate-950 hover:bg-blue-600 text-white text-xs font-bold shrink-0 transition-colors no-print">
+                                Kunjungi
+                            </a>
+                        </div>
+
+                        <!-- Alamat Lengkap -->
+                        <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm flex items-start gap-3.5">
+                            <div class="w-11 h-11 rounded-xl bg-slate-950 text-white flex items-center justify-center text-lg shrink-0 mt-0.5">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <div class="text-[11px] uppercase font-bold tracking-wider text-slate-500">Alamat Lengkap</div>
+                                <div class="text-sm font-extrabold text-slate-950 mt-0.5 leading-snug">
+                                    Kp. Guradog Timur, Desa Citorek Timur, Kecamatan Cibeber, Kabupaten Lebak, Provinsi Banten
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kolom Kanan: Formulir Kirim Pesan Cepat ke WhatsApp / Email Samsul Rizal -->
+                <div class="lg:col-span-7 no-print">
+                    <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-lg">
+                        <div class="flex items-center justify-between gap-2 mb-6 pb-4 border-b border-slate-100">
+                            <div>
+                                <h3 class="font-display font-extrabold text-xl text-slate-950">
+                                    Kirim Pesan Langsung ke Samsul Rizal
+                                </h3>
+                                <p class="text-xs sm:text-sm text-slate-600 mt-0.5">
+                                    Isi pesan di bawah ini untuk langsung terhubung ke WhatsApp atau Email pribadi saya.
+                                </p>
+                            </div>
+                            <span class="w-11 h-11 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </span>
+                        </div>
+
+                        <form id="contactForm" onsubmit="handleContactSubmit(event)" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-extrabold uppercase tracking-wider text-slate-700 mb-1.5">Nama Pengirim *</label>
+                                    <input type="text" id="senderName" required placeholder="Nama Bapak/Ibu" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-950 text-sm font-medium focus:outline-none focus:border-blue-600 focus:bg-white">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-extrabold uppercase tracking-wider text-slate-700 mb-1.5">Nama Perusahaan / Instansi *</label>
+                                    <input type="text" id="senderCompany" required placeholder="Contoh: PT Maju Bersama" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-950 text-sm font-medium focus:outline-none focus:border-blue-600 focus:bg-white">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-extrabold uppercase tracking-wider text-slate-700 mb-1.5">Perihal Pesan *</label>
+                                    <select id="inquiryType" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-950 text-sm font-semibold focus:outline-none focus:border-blue-600 focus:bg-white">
+                                        <option value="Undangan Interview / Seleksi Kerja">Undangan Interview / Seleksi Kerja</option>
+                                        <option value="Tawaran Posisi IT Web Developer / Data / QC">Tawaran Posisi IT Web Developer / Data / QC</option>
+                                        <option value="Pemesanan Pembuatan Sistem Informasi">Pemesanan Pembuatan Sistem Informasi</option>
+                                        <option value="Diskusi & Kerja Sama Lainnya">Diskusi & Kerja Sama Lainnya</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-extrabold uppercase tracking-wider text-slate-700 mb-1.5">Metode Pengiriman *</label>
+                                    <select id="sendChannel" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-950 text-sm font-semibold focus:outline-none focus:border-blue-600 focus:bg-white">
+                                        <option value="whatsapp">Kirim via WhatsApp</option>
+                                        <option value="email">Kirim via Email</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-extrabold uppercase tracking-wider text-slate-700 mb-1.5">Isi Pesan *</label>
+                                <textarea id="senderMessage" rows="4" required placeholder="Tuliskan informasi posisi pekerjaan, jadwal interview, atau kebutuhan sistem..." class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-950 text-sm font-medium focus:outline-none focus:border-blue-600 focus:bg-white"></textarea>
+                            </div>
+
+                            <div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-3">
+                                <span class="text-xs text-slate-600 font-medium">
+                                    <i class="fa-solid fa-circle-check text-blue-600 mr-1"></i> Pesan langsung menuju kontak pribadi Samsul Rizal.
+                                </span>
+                                <button type="submit" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-blue-600 hover:bg-slate-950 text-white font-bold text-sm shadow-md shadow-blue-600/20 flex items-center justify-center gap-2 transition-all">
+                                    <i class="fa-solid fa-paper-plane"></i> Kirim Pesan Sekarang
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =====================================================================
+         FOOTER (HITAM PEKAT & AKSEN BIRU KONTRAS TINGGI)
+    ====================================================================== -->
+    <footer class="bg-slate-950 text-white py-10 border-t border-slate-800 no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-blue-600 text-white font-display font-extrabold flex items-center justify-center text-xs">
+                    SR
+                </div>
+                <span class="text-slate-300">
+                    © 2026 <strong class="text-white">Samsul Rizal</strong> • Kp. Guradog Timur, Desa Citorek Timur, Kec. Cibeber, Kab. Lebak, Banten.
+                </span>
+            </div>
+            <a href="#profil" class="px-4 py-2 rounded-xl bg-slate-900 hover:bg-blue-600 text-white font-bold text-xs flex items-center gap-1.5 border border-slate-800 transition-colors">
+                Kembali ke Atas <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- =====================================================================
+         MODAL 1: DETAIL PROYEK SISTEM
+    ====================================================================== -->
+    <div id="projectModal" class="fixed inset-0 z-[80] hidden items-center justify-center bg-slate-950/80 backdrop-blur-sm p-4 no-print">
+        <div class="bg-white rounded-3xl max-w-2xl w-full border border-slate-200 overflow-hidden shadow-2xl">
+            <div class="relative aspect-video bg-slate-950">
+                <img id="modalProjectImg" src="" alt="Preview Proyek" class="w-full h-full object-cover">
+                <button onclick="closeProjectModal()" aria-label="Tutup Modal" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-slate-950/85 text-white hover:bg-blue-600 flex items-center justify-center transition-colors">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <span id="modalProjectCategory" class="absolute bottom-4 left-4 px-3.5 py-1 rounded-full text-xs font-bold bg-blue-600 text-white shadow"></span>
+            </div>
+            <div class="p-6 sm:p-8 space-y-4">
+                <h3 id="modalProjectTitle" class="font-display font-extrabold text-xl sm:text-2xl text-slate-950"></h3>
+                <p id="modalProjectDesc" class="text-sm text-slate-700 leading-relaxed"></p>
+                <div>
+                    <div class="text-xs font-extrabold uppercase tracking-wider text-slate-500 mb-2">Fitur & Modul Utama Sistem:</div>
+                    <ul id="modalProjectFeatures" class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm text-slate-800 font-medium"></ul>
+                </div>
+                <div class="pt-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3">
+                    <div id="modalProjectTech" class="flex flex-wrap gap-1.5"></div>
+                    <button onclick="closeProjectModal()" class="px-5 py-2.5 rounded-xl bg-slate-950 hover:bg-blue-600 text-white font-bold text-xs transition-colors">
+                        Tutup Detail
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =====================================================================
+         MODAL 2: PREVIEW SERTIFIKAT UKURAN PENUH
+    ====================================================================== -->
+    <div id="certificateModal" class="fixed inset-0 z-[80] hidden items-center justify-center bg-slate-950/85 backdrop-blur-md p-4 no-print">
+        <div class="max-w-3xl w-full bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-2xl">
+            <div class="p-4 bg-slate-950 text-white flex items-center justify-between">
+                <h3 id="certModalTitle" class="font-display font-bold text-sm sm:text-base text-white"></h3>
+                <button onclick="closeCertificateModal()" class="w-9 h-9 rounded-xl bg-slate-800 text-white hover:bg-blue-600 flex items-center justify-center transition-colors">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="p-4 bg-slate-100 flex items-center justify-center max-h-[75vh] overflow-auto">
+                <img id="certModalImg" src="" alt="Sertifikat Samsul Rizal" class="max-w-full max-h-[68vh] object-contain rounded-xl shadow">
+            </div>
+        </div>
+    </div>
+
+    <!-- =====================================================================
+         JAVASCRIPT: PENGATURAN DATA KONTAK & INTERAKTIVITAS HALAMAN
+    ====================================================================== -->
+    <script>
+        /* ===================================================================
+           PUSAT PENGATURAN DATA KONTAK SAMSUL RIZAL (EDIT LANGSUNG DI SINI)
+        =================================================================== */
+        const DATA_KONTAK = {
+            nomorWhatsApp: "6282113234195",          // Gunakan awalan 62 tanpa tanda + atau spasi
+            tampilanTelepon: "+62 821-1323-4195",    // Teks nomor telepon yang tampil di layar
+            email: "samsulrizal14045@gmail.com.com",         // Alamat email resmi Anda
+            linkedinUrl: "https://www.linkedin.com/in/samsul-rizal-56b770397/",
+            githubUrl: "https://github.com/samsulrizal"
+        };
+
+        // Data Detail 8 Proyek Sistem
+        const projectsData = [
+            {
+                title: "Sistem Back Office, Pekerjaan Karyawan & Pengajuan Halal – Halal Center Yahida",
+                category: "Enterprise & Back-Office",
+                photoId: "photo-projek-1",
+                desc: "Sistem informasi terpadu yang dibangun untuk Halal Center Yahida guna mengelola administrasi back-office, memantau progres pekerjaan harian karyawan, serta melacak status dokumen pengajuan sertifikasi halal.",
+                features: [
+                    "Manajemen Data & Tugas Harian Karyawan",
+                    "Tracking Status Dokumen Pengajuan Halal",
+                    "Dashboard Administrasi Back-Office Terpusat",
+                    "Hak Akses Multi-User (Admin, Staf, Manajemen)"
+                ],
+                tech: ["Full-Stack Web", "Backend System", "MySQL Database", "Responsive UI"]
+            },
+            {
+                title: "Sistem E-Commerce Penjualan Gamis",
+                category: "E-Commerce Platform",
+                photoId: "photo-projek-2",
+                desc: "Website penjualan busana muslim dan gamis secara online yang memudahkan pelanggan memilih katalog produk, melakukan pemesanan, serta memudahkan pengelola toko memantau stok dan laporan transaksi.",
+                features: [
+                    "Katalog Produk Dinamis & Pencarian Cepat",
+                    "Keranjang Belanja & Checkout Pemesanan",
+                    "Manajemen Stok Varian Ukuran & Warna",
+                    "Rekapitulasi Laporan Penjualan Toko"
+                ],
+                tech: ["Web Development", "MySQL", "E-Commerce", "Admin Dashboard"]
+            },
+            {
+                title: "Sistem Informasi Penjualan Kedai EsTehDewa",
+                category: "Point of Sale (POS)",
+                photoId: "photo-projek-3",
+                desc: "Sistem informasi kasir dan pengelolaan penjualan untuk Kedai EsTehDewa yang dirancang untuk mempercepat pencatatan pesanan pelanggan, mengontrol stok bahan baku, dan menyajikan laporan pendapatan akurat.",
+                features: [
+                    "Transaksi Kasir Cepat (Point of Sale)",
+                    "Manajemen Menu & Harga Produk",
+                    "Laporan Penjualan Harian, Mingguan & Bulanan",
+                    "Pemantauan Persediaan Bahan Baku Kedai"
+                ],
+                tech: ["POS System", "Web Backend", "Database MySQL", "Laporan Keuangan"]
+            },
+            {
+                title: "Sistem Pakar Diagnosa Kerusakan AC Sharp",
+                category: "Expert System / Sistem Pakar",
+                photoId: "photo-projek-4",
+                desc: "Aplikasi sistem pakar berbasis web untuk membantu teknisi maupun pengguna mengidentifikasi kerusakan pada unit AC Sharp berdasarkan gejala teknis yang dialami beserta rekomendasi solusinya.",
+                features: [
+                    "Basis Pengetahuan Gejala & Kerusakan AC Sharp",
+                    "Mesin Inferensi Penelusuran Diagnosa",
+                    "Solusi Penanganan & Perbaikan Komponen",
+                    "Manajemen Data Aturan Pakar oleh Admin"
+                ],
+                tech: ["Sistem Pakar", "Logika Diagnosa", "MySQL", "Full-Stack Web"]
+            },
+            {
+                title: "Sistem Pemetaan Potensi Desa Citorek Timur",
+                category: "Sistem Informasi Desa",
+                photoId: "photo-projek-5",
+                desc: "Sistem informasi geografis dan direktori digital untuk memetakan potensi sumber daya pertanian, UMKM warga, demografi, dan infrastruktur di Desa Citorek Timur, Kecamatan Cibeber, Kabupaten Lebak.",
+                features: [
+                    "Pemetaan Potensi Ekonomi & Sumber Daya Desa",
+                    "Pendataan UMKM, Pertanian & Sarana Publik",
+                    "Portal Informasi Resmi Pemerintah Desa",
+                    "Rekapitulasi Statistik & Data Wilayah"
+                ],
+                tech: ["Sistem Desa", "Pemetaan Spasial", "MySQL", "Web Portal"]
+            },
+            {
+                title: "Sistem Inventory & Keuangan Puspa Jaya Pool",
+                category: "Inventory & Financial System",
+                photoId: "photo-projek-6",
+                desc: "Sistem pengelolaan stok gudang dan keuangan internal Puspa Jaya Pool yang mengintegrasikan pencatatan keluar-masuk barang inventaris dengan pembukuan arus kas operasional.",
+                features: [
+                    "Pencatatan Barang Masuk & Keluar Gudang",
+                    "Monitoring Ketersediaan Stok Secara Real-Time",
+                    "Jurnal Pemasukan & Pengeluaran Keuangan",
+                    "Cetak Laporan Stok & Rekapitulasi Kas"
+                ],
+                tech: ["Inventory Control", "Sistem Keuangan", "MySQL", "Web Application"]
+            },
+            {
+                title: "Sistem Pemesanan Tiket Wisata Goa Baduy Sukabumi",
+                category: "E-Ticketing Wisata",
+                photoId: "photo-projek-7",
+                desc: "Aplikasi web pemesanan tiket masuk objek wisata Goa Baduy Sukabumi secara online yang memudahkan pengunjung melakukan reservasi jadwal kunjungan dan mencetak bukti tiket elektronik.",
+                features: [
+                    "Reservasi Tiket Online Berdasarkan Jadwal",
+                    "Pengaturan Kuota Kunjungan Harian",
+                    "Konfirmasi Pembayaran & Cetak E-Ticket",
+                    "Panel Verifikasi Pengelola Destinasi Wisata"
+                ],
+                tech: ["E-Ticketing", "Reservasi Online", "MySQL", "Responsive Web"]
+            },
+            {
+                title: "Sistem Pendukung Keputusan (SPK) Binsa Insan Mandiri Baron Bogor",
+                category: "Decision Support System (SPK)",
+                photoId: "photo-projek-8",
+                desc: "Sistem pendukung keputusan berbasis perhitungan multi-kriteria untuk Binsa Insan Mandiri Baron Bogor guna menunjang proses penilaian, seleksi, dan perankingan secara objektif.",
+                features: [
+                    "Manajemen Kriteria & Bobot Penilaian",
+                    "Perhitungan Normalisasi & Perankingan Otomatis",
+                    "Hasil Rekomendasi Keputusan yang Akurat",
+                    "Cetak Laporan Hasil Evaluasi Lengkap"
+                ],
+                tech: ["Sistem Pendukung Keputusan", "Data Analysis", "MySQL", "Web System"]
+            }
+        ];
+
+        // Terapkan DATA_KONTAK ke seluruh elemen saat halaman dimuat
+        window.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.contact-email-text').forEach(el => el.textContent = DATA_KONTAK.email);
+            document.querySelectorAll('.contact-phone-text').forEach(el => el.textContent = DATA_KONTAK.tampilanTelepon);
+            document.querySelectorAll('.contact-linkedin-text').forEach(el => {
+                el.textContent = DATA_KONTAK.linkedinUrl.replace(/^https?:\/\//, '');
+            });
+
+            const defaultWaText = encodeURIComponent("Halo Samsul Rizal, saya melihat website portofolio Anda dan tertarik untuk berdiskusi mengenai peluang kerja / pembuatan sistem.");
+            const waFullLink = `https://wa.me/${DATA_KONTAK.nomorWhatsApp}?text=${defaultWaText}`;
+
+            const heroWa = document.getElementById('heroWaLink');
+            const cardWa = document.getElementById('cardWaLink');
+            if (heroWa) heroWa.href = waFullLink;
+            if (cardWa) cardWa.href = waFullLink;
+
+            const heroMail = document.getElementById('heroMailLink');
+            if (heroMail) heroMail.href = `mailto:${DATA_KONTAK.email}`;
+
+            const heroLinkedin = document.getElementById('heroLinkedinLink');
+            const cardLinkedin = document.getElementById('cardLinkedinLink');
+            if (heroLinkedin) heroLinkedin.href = DATA_KONTAK.linkedinUrl;
+            if (cardLinkedin) cardLinkedin.href = DATA_KONTAK.linkedinUrl;
+
+            const heroGithub = document.getElementById('heroGithubLink');
+            if (heroGithub) heroGithub.href = DATA_KONTAK.githubUrl;
+        });
+
+        // Filter Kategori Proyek
+        function filterProjects(category) {
+            const cards = document.querySelectorAll('.project-card');
+            const buttons = document.querySelectorAll('.project-filter-btn');
+
+            buttons.forEach(btn => {
+                if (btn.getAttribute('data-filter') === category) {
+                    btn.className = "project-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-sm transition-all";
+                } else {
+                    btn.className = "project-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-white border border-slate-300 text-slate-800 hover:border-blue-600 hover:text-blue-600 transition-all";
+                }
+            });
+
+            cards.forEach(card => {
+                const cardCat = card.getAttribute('data-category');
+                if (category === 'all' || cardCat === category) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+
+        // Modal Detail Proyek
+        function openProjectModal(index) {
+            const item = projectsData[index];
+            if (!item) return;
+
+            const sourceImg = document.getElementById(item.photoId);
+            document.getElementById('modalProjectImg').src = sourceImg ? sourceImg.src : '';
+            document.getElementById('modalProjectCategory').textContent = item.category;
+            document.getElementById('modalProjectTitle').textContent = item.title;
+            document.getElementById('modalProjectDesc').textContent = item.desc;
+
+            const featuresList = document.getElementById('modalProjectFeatures');
+            featuresList.innerHTML = item.features.map(f => `
+                <li class="flex items-start gap-2">
+                    <i class="fa-solid fa-circle-check text-blue-600 mt-1 text-xs shrink-0"></i>
+                    <span>${f}</span>
+                </li>
+            `).join('');
+
+            const techContainer = document.getElementById('modalProjectTech');
+            techContainer.innerHTML = item.tech.map(t => `
+                <span class="px-3 py-1 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">${t}</span>
+            `).join('');
+
+            const modal = document.getElementById('projectModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeProjectModal() {
+            const modal = document.getElementById('projectModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        // Modal Perbesar Sertifikat
+        function previewCertificate(imgId, title) {
+            const imgEl = document.getElementById(imgId);
+            if (!imgEl) return;
+            document.getElementById('certModalTitle').textContent = title;
+            document.getElementById('certModalImg').src = imgEl.src;
+            const modal = document.getElementById('certificateModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeCertificateModal() {
+            const modal = document.getElementById('certificateModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        // Salin Email ke Clipboard
+        function copyEmailAddress() {
+            const tempInput = document.createElement('textarea');
+            tempInput.value = DATA_KONTAK.email;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            showToast(`Email ${DATA_KONTAK.email} berhasil disalin!`, 'success');
+        }
+
+        // Kirim Pesan dari Formulir Bawah ke WhatsApp atau Email
+        function handleContactSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('senderName').value.trim();
+            const company = document.getElementById('senderCompany').value.trim();
+            const type = document.getElementById('inquiryType').value;
+            const channel = document.getElementById('sendChannel').value;
+            const message = document.getElementById('senderMessage').value.trim();
+
+            const formattedText = `Halo Samsul Rizal,\n\nSaya *${name}* dari *${company}*.\nPerihal: *${type}*\n\nPesan:\n${message}\n\nTerima kasih.`;
+
+            if (channel === 'whatsapp') {
+                const waLink = `https://wa.me/${DATA_KONTAK.nomorWhatsApp}?text=${encodeURIComponent(formattedText)}`;
+                window.open(waLink, '_blank');
+                showToast('Mengarahkan pesan ke WhatsApp Samsul Rizal...', 'success');
+            } else {
+                const subject = encodeURIComponent(`[Portofolio Samsul Rizal] ${type} - ${company}`);
+                const body = encodeURIComponent(formattedText);
+                window.location.href = `mailto:${DATA_KONTAK.email}?subject=${subject}&body=${body}`;
+                showToast('Membuka aplikasi Email Anda...', 'success');
+            }
+        }
+
+        // Toggle Menu Navigasi HP
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const icon = document.getElementById('mobileMenuIcon');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                icon.className = 'fa-solid fa-xmark text-lg';
+            } else {
+                menu.classList.add('hidden');
+                icon.className = 'fa-solid fa-bars text-base';
+            }
+        }
+
+        // Notifikasi Toast
+        function showToast(message) {
+            const container = document.getElementById('toastContainer');
+            const toast = document.createElement('div');
+            toast.className = 'pointer-events-auto flex items-center gap-3 px-4 py-3 rounded-2xl border-l-4 border-blue-500 bg-slate-950 text-white shadow-xl text-xs sm:text-sm font-semibold transition-all duration-300';
+            toast.innerHTML = `
+                <i class="fa-solid fa-circle-check text-blue-400 text-base"></i>
+                <span class="flex-1">${message}</span>
+            `;
+            container.appendChild(toast);
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                toast.style.transform = 'translateY(10px)';
+                setTimeout(() => toast.remove(), 300);
+            }, 3200);
+        }
+    </script>
+</body>
+</html>
